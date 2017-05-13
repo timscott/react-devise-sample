@@ -31,7 +31,7 @@ The api and the website will run on different ports. The port specified in the `
 "proxy": "http://localhost:[the same port in the .foreman file]"
 ```
 
-If you want to change the ports locally, change the port both ```.foreman``` and ```./client/package.json``` to the same value.
+If you want to change the ports locally, change both ```.foreman``` and ```./client/package.json``` to the same port.
 
 ## Comments
 
