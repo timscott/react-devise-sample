@@ -40,8 +40,8 @@ If you want to change the ports locally, change both ```.foreman``` and ```./cli
   * ```react-router-redux```
   * ```redux-persist```
   * ```material-ui```
-  * ```ruby graphql```
+  * ```graphql```
   * ```apollo```
   * ```styled-components```
-2. By default we are not using the plugin ```react-devise-material-ui```. To try it out, uncomment the commented lines in the [setup file](https://github.com/timscott/react-devise-sample/blob/master/client/src/app/setup.js).
+2. By default we are not using the plugin [react-devise-material-ui](https://github.com/timscott/react-devise-material-ui). To try it out, uncomment the commented lines in the [setup file](https://github.com/timscott/react-devise-sample/blob/master/client/src/app/setup.js).
 

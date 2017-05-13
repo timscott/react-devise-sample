@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {AppBar, Toolbar, ToolbarGroup, Menu, MenuItem, Popover, IconButton} from 'material-ui';
+import {AppBar, Toolbar, ToolbarGroup, Menu, MenuItem, Popover} from 'material-ui';
 import {connect} from 'react-redux';
 import {logout} from 'react-devise/lib/actions';
 import {Link} from 'react-router-dom';
