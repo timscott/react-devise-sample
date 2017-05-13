@@ -14,11 +14,11 @@ Steps to set up after cloning the repo locally.
 gem install bundler
 bundle
 rails db:setup
-#add create .env file with devise token secret
+# Create .env file with devise token secret
 rails secret | (read secret; echo DEVISE_JWT_SECRET_KEY="$secret" > .env)
-#install client dependencies
+# Install client dependencies
 (cd client && yarn)
-#run the app
+# Run the app
 foreman start -f Procfile.dev
 ```
 
