@@ -4,7 +4,7 @@ This app is a reference implementation of [react-devise](https://github.com/tims
 
 ## Demo
 
-This app is deployed on Heroku: https://github.com/timscott/react-devise-sample
+React Devise Sample is deployed on Heroku: https://github.com/timscott/react-devise-sample
 
 ## Setup
 
@@ -32,4 +32,16 @@ The api and the website will run on different ports. The port specified in the `
 ```
 
 If you want to change the ports locally, change the port both ```.foreman``` and ```./client/package.json``` to the same value.
+
+## Comments
+
+1. This app uses some bits that are not necessary for ```react-devise``` to function:
+  * ```create-react-app```
+  * ```react-router-redux```
+  * ```redux-persist```
+  * ```material-ui```
+  * ```ruby graphql```
+  * ```apollo```
+  * ```styled-components```
+2. By default we are not using the plugin ```react-devise-material-ui```. To try it out, uncomment the commented lines in the [setup file](https://github.com/timscott/react-devise-sample/blob/master/client/src/app/setup.js).
 

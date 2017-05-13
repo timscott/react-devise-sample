@@ -10,7 +10,6 @@ import muiThemeable from 'material-ui/styles/muiThemeable';
 import {Notice} from '../shared';
 
 const MainAppBar = styled(AppBar)`
-  background-color: #fff !important;
   &:hover {
     cursor: pointer;
   }
@@ -40,14 +39,15 @@ class UserMenuItem extends Component {
     });
   };
   render() {
-    const {currentUser, logout} = this.props;
+    const {currentUser, logout, textColor} = this.props;
     if (currentUser && currentUser.isLoggedIn) {
       return (
         <div>
           <MenuItem
             primaryText={currentUser.displayName || currentUser.email}
             onTouchTap={this.handleTouchTap}
-            leftIcon={<DropDownArrow />}
+            leftIcon={<DropDownArrow color={textColor}/>}
+            style={{color: textColor}}
           />
           <Popover
             open={this.state.open}
@@ -57,7 +57,7 @@ class UserMenuItem extends Component {
             onRequestClose={this.handleRequestClose}
           >
             <Menu>
-              <MenuItem primaryText="Log Out" onTouchTap={logout}/>
+              <MenuItem primaryText="Log Out" onTouchTap={logout} />
             </Menu>
           </Popover>
         </div>
@@ -67,6 +67,7 @@ class UserMenuItem extends Component {
       <MenuItem
         containerElement={<Link to="/users/login"/>}
         primaryText="Log In"
+        style={{color: textColor}}
       />
     );
   }
@@ -90,8 +91,8 @@ class MainLayout extends Component {
       <div>
         <MainAppBar
           title="React Devise Sample"
-          titleStyle={{color: palette.textColor, fontSize: 28, fontWeight: 600}}
-          iconElementLeft={<IconButton><HamburgerMenu color={palette.textColor} /></IconButton>}
+          titleStyle={{fontSize: 28, fontWeight: 600}}
+          iconElementLeft={<IconButton><HamburgerMenu /></IconButton>}
           onTitleTouchTap={this.goHome}
           onLeftIconButtonTouchTap={this.openDrawer}
         >
@@ -100,8 +101,9 @@ class MainLayout extends Component {
               <MenuItem
                 containerElement={<Link to="/hello"/>}
                 primaryText="Hello"
+                style={{color: palette.alternateTextColor}}
               />
-              <UserMenuItem logout={doLogout} currentUser={currentUser} />
+              <UserMenuItem logout={doLogout} currentUser={currentUser} textColor={palette.alternateTextColor}/>
             </ToolbarGroup>
           </MainToolbar>
         </MainAppBar>

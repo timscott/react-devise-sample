@@ -5,7 +5,6 @@ import {persistStore, autoRehydrate} from 'redux-persist';
 import {reducer as formReducer} from 'redux-form';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import ApolloClient, {createNetworkInterface} from 'apollo-client';
-import thunk from 'redux-thunk';
 // import ReactDeviseMaterialUI from 'react-devise-material-ui';
 import {initReactDevise, addAuthorizationHeaderToRequest} from 'react-devise';
 import reactDeviseReducers from 'react-devise/lib/reducers';
@@ -41,7 +40,6 @@ const initStore = ({onRehydrationComplete}) => {
     {},
     compose(
       applyMiddleware(
-        thunk,
         routerMiddleware(history),
         apolloClient.middleware()
       ),
