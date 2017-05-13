@@ -1,6 +1,8 @@
-# README
+# React Devise Sample
 
 This app is a reference implementation of [react-devise](https://github.com/timscott/react-devise).
+
+## Setup
 
 Steps to set up after cloning the repo locally.
 
