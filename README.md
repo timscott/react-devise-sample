@@ -2,6 +2,10 @@
 
 This app is a reference implementation of [react-devise](https://github.com/timscott/react-devise).
 
+## Demo
+
+This app is deployed on Heroku: https://github.com/timscott/react-devise-sample
+
 ## Setup
 
 Steps to set up after cloning the repo locally.
