@@ -5,7 +5,7 @@ import {logout} from 'react-devise/lib/actions';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import DropDownArrow from 'material-ui/svg-icons/navigation/arrow-drop-down';
-import HamburgerMenu from 'material-ui/svg-icons/navigation/menu';
+import LogoIcon from 'material-ui/svg-icons/action/lightbulb-outline';
 import muiThemeable from 'material-ui/styles/muiThemeable';
 import {Notice} from '../shared';
 
@@ -17,10 +17,18 @@ const MainAppBar = styled(AppBar)`
 
 const MainToolbar = styled(Toolbar)`
   background-color: transparent !important;
+  margin-top: 4px;
 `;
 
 const MainContainer = styled.div`
   padding: 20px;
+`;
+
+const Logo = styled(LogoIcon)`
+  height: 32px !important;
+  width: 32px !important;
+  color: ${({theme}) => theme.palette.alternateTextColor} !important;
+  padding: 6px !important;
 `;
 
 class UserMenuItem extends Component {
@@ -91,8 +99,8 @@ class MainLayout extends Component {
       <div>
         <MainAppBar
           title="React Devise Sample"
-          titleStyle={{fontSize: 28, fontWeight: 600}}
-          iconElementLeft={<IconButton><HamburgerMenu /></IconButton>}
+          titleStyle={{fontSize: 28, fontWeight: 500}}
+          iconElementLeft={<Logo />}
           onTitleTouchTap={this.goHome}
           onLeftIconButtonTouchTap={this.openDrawer}
         >
@@ -103,7 +111,11 @@ class MainLayout extends Component {
                 primaryText="Hello"
                 style={{color: palette.alternateTextColor}}
               />
-              <UserMenuItem logout={doLogout} currentUser={currentUser} textColor={palette.alternateTextColor}/>
+              <UserMenuItem
+                logout={doLogout}
+                currentUser={currentUser}
+                textColor={palette.alternateTextColor}
+              />
             </ToolbarGroup>
           </MainToolbar>
         </MainAppBar>
