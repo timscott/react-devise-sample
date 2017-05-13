@@ -1,0 +1,2 @@
+api: bundle exec rails s
+web: (HTTP_PROXY=http://localhost:3600 && cd client && yarn start)

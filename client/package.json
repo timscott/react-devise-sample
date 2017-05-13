@@ -1,0 +1,35 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "inflected": "^2.0.1",
+    "material-ui": "^0.17.4",
+    "moment-timezone": "^0.5.13",
+    "react": "^15.5.4",
+    "react-apollo": "^1.1.2",
+    "react-devise": "^0.0.6",
+    "react-devise-material-ui": "^0.0.1",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.4",
+    "react-router-dom": "^4.1.1",
+    "react-router-redux": "^5.0.0-alpha.6",
+    "react-scripts": "0.9.5",
+    "react-tap-event-plugin": "^2.0.1",
+    "redux": "^3.6.0",
+    "redux-form": "^6.6.3",
+    "redux-form-material-ui": "^4.2.0",
+    "redux-persist": "^4.6.0",
+    "redux-thunk": "^2.2.0",
+    "reflexbox": "^2.2.3",
+    "styled-components": "^1.4.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "proxy": "http://localhost:4300"
+}

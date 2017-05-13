@@ -1,0 +1,14 @@
+{
+  "name": "react_devise_sample",
+  "engines": {
+    "node": "6.3.1"
+  },
+  "scripts": {
+    "build": "cd client && yarn && yarn run build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "yarn run build && yarn run deploy && echo 'Client built!'"
+  },
+  "dependencies": {
+    "babel-plugin-wildcard": "^1.0.0"
+  }
+}

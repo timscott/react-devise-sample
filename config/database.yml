@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+development:
+  <<: *default
+  database: react_devise_sample_development
+  host: localhost
+  pool: 10
+
+test:
+  <<: *default
+  database: react_devise_sample_test
+  host: localhost
+  pool: 10
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
+  pool: <%= ENV["DB_POOL"] || ENV['WEB_MAX_THREADS'] || 5 %>
