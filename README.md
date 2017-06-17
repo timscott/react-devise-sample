@@ -37,8 +37,8 @@ If you want to change the ports locally, change both ```.foreman``` and ```./cli
 
 1. This app uses some bits that are not necessary for `react-devise` to function:
   * [create-react-app](https://github.com/facebookincubator/create-react-app)
-  * [react-router-redux](https://github.com/rt2zz/redux-persist)
-  * [redux-persist](https://github.com/reactjs/react-router-redux)
+  * [react-router-redux](https://github.com/reactjs/react-router-redux)
+  * [redux-persist](https://github.com/rt2zz/redux-persist)
   * [material-ui](http://www.material-ui.com)
   * [graphql](http://graphql.org/)
   * [apollo](http://dev.apollodata.com/)
