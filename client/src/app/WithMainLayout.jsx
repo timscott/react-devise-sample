@@ -12,4 +12,4 @@ const WithMainLayout = ({component: Component, ...more}) => {
   }}/>;
 };
 
-export defaut WithMainLayout;
+export default WithMainLayout;

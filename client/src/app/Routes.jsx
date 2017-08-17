@@ -1,7 +1,7 @@
 import React from 'react';
 import {Switch} from 'react-router-dom';
 import MainLayout from '../layouts/MainLayout';
-import Home from '../home/View';
+import Home from '../home/Home';
 import NotFound from '../app/NotFound';
 import Hello from '../hello/Hello';
 import {authRoutes, PrivateRoute} from 'react-devise';
