@@ -9,7 +9,15 @@ import ApolloClient, {createNetworkInterface} from 'apollo-client';
 import {initReactDevise, addAuthorizationHeaderToRequest} from 'react-devise';
 import reactDeviseReducers from 'react-devise/lib/reducers';
 import {Alert, UnstyledList, ViewHeading} from '../shared';
-import styled from 'styled-components';
+import styled, {injectGlobal} from 'styled-components';
+
+// eslint-disable-next-line no-unused-expressions
+injectGlobal`
+  body {
+    fontFamily: Roboto, sans-serif;
+    margin: 0;
+  }
+`;
 
 injectTapEventPlugin();
 
@@ -60,7 +68,7 @@ const AuthAlert = styled(Alert)`
   margin-top: 10px;
 `;
 
-const getReactDeviseConfig = initReactDevise({
+initReactDevise({
   viewPlugins: [
     // ReactDeviseMaterialUI.plugin(),
     {
@@ -78,6 +86,5 @@ export {
   initStore,
   store,
   history,
-  apolloClient,
-  getReactDeviseConfig
+  apolloClient
 };

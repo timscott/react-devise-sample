@@ -2630,10 +2630,6 @@ indexof@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
 
-inflected@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/inflected/-/inflected-2.0.1.tgz#a8a8f84c58dc8a607216a355cf59fb84ce3bdeac"
-
 inflight@^1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/inflight/-/inflight-1.0.6.tgz#49bd6331d7d02d0c09bc910a1075ba8165b56df9"
@@ -3618,16 +3614,6 @@ minimist@^1.1.1, minimist@^1.2.0:
   dependencies:
     minimist "0.0.8"
 
-moment-timezone@^0.5.13:
-  version "0.5.13"
-  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.13.tgz#99ce5c7d827262eb0f1f702044177f60745d7b90"
-  dependencies:
-    moment ">= 2.9.0"
-
-"moment@>= 2.9.0":
-  version "2.18.1"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
-
 ms@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
@@ -4486,9 +4472,9 @@ react-devise-material-ui@^0.0.1:
     material-ui "^0.17.4"
     react "^15.5.4"
 
-react-devise@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/react-devise/-/react-devise-0.0.6.tgz#c1bd1f63ca8c7cb07617784390fff6b60a883a84"
+react-devise@^0.0.16:
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/react-devise/-/react-devise-0.0.16.tgz#611a5f87e1d026d52ec46865e9efcd07964eba65"
   dependencies:
     es6-error "^4.0.2"
     fetch-bluebird "^1.0.3"
@@ -4738,10 +4724,6 @@ redux-persist@^4.6.0:
     lodash "^4.17.4"
     lodash-es "^4.17.4"
 
-redux-thunk@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.2.0.tgz#e615a16e16b47a19a515766133d1e3e99b7852e5"
-
 redux@^3.4.0, redux@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/redux/-/redux-3.6.0.tgz#887c2b3d0b9bd86eca2be70571c27654c19e188d"
@@ -4750,13 +4732,6 @@ redux@^3.4.0, redux@^3.6.0:
     lodash-es "^4.2.1"
     loose-envify "^1.1.0"
     symbol-observable "^1.0.2"
-
-reflexbox@^2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/reflexbox/-/reflexbox-2.2.3.tgz#9b9ce983dbe677cebf3a94cf2c50b8157f50c0d1"
-  dependencies:
-    robox "^1.0.0-beta.8"
-    ruled "^1.0.1"
 
 regenerate@^1.2.1:
   version "1.3.2"
@@ -4933,16 +4908,6 @@ rimraf@2, rimraf@^2.2.8, rimraf@^2.5.1, rimraf@^2.6.1:
 ripemd160@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/ripemd160/-/ripemd160-0.2.0.tgz#2bf198bde167cacfa51c0a928e84b68bbe171fce"
-
-robox@^1.0.0-beta.8:
-  version "1.0.0-beta.8"
-  resolved "https://registry.yarnpkg.com/robox/-/robox-1.0.0-beta.8.tgz#9aaee1dacf38a8c4ca4584a80012aebab5711c73"
-  dependencies:
-    understyle "^1.2.0"
-
-ruled@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ruled/-/ruled-1.0.1.tgz#8301a1accc9d2e14b6502fca7033582335c2c0f4"
 
 run-async@^0.1.0:
   version "0.1.0"
@@ -5461,12 +5426,6 @@ uid-number@^0.0.6:
 underscore@~1.4.4:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.4.4.tgz#61a6a32010622afa07963bf325203cf12239d604"
-
-understyle@^1.2.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/understyle/-/understyle-1.3.0.tgz#df3f9a9be96779d718c3da9598fad1c2f90f24ee"
-  dependencies:
-    object-assign "^4.1.0"
 
 uniq@^1.0.1:
   version "1.0.1"
