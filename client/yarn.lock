@@ -4472,9 +4472,9 @@ react-devise-material-ui@^0.0.1:
     material-ui "^0.17.4"
     react "^15.5.4"
 
-react-devise@^0.0.16:
-  version "0.0.16"
-  resolved "https://registry.yarnpkg.com/react-devise/-/react-devise-0.0.16.tgz#611a5f87e1d026d52ec46865e9efcd07964eba65"
+react-devise@^0.0.18:
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/react-devise/-/react-devise-0.0.18.tgz#58b2fbe42b49dfa8d13a9813a0250cb09ef5d278"
   dependencies:
     es6-error "^4.0.2"
     fetch-bluebird "^1.0.3"

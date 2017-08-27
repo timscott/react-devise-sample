@@ -6,7 +6,7 @@
     "material-ui": "^0.17.4",
     "react": "^15.5.4",
     "react-apollo": "^1.1.2",
-    "react-devise": "^0.0.16",
+    "react-devise": "^0.0.18",
     "react-devise-material-ui": "^0.0.1",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.4",

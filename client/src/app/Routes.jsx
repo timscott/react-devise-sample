@@ -7,10 +7,12 @@ import Hello from '../hello/Hello';
 import {authRoutes, PrivateRoute} from 'react-devise';
 import WithMainLayout from './WithMainLayout';
 
+const AuthNotFound = () => <MainLayout><NotFound/></MainLayout>;
+
 const Routes = () => {
   return (
     <Switch>
-      {authRoutes({wrapper: WithMainLayout, notFound: NotFound})}
+      {authRoutes({wrapper: WithMainLayout, notFoundComponent: AuthNotFound})}
       <PrivateRoute exact path="/hello" layout={MainLayout} component={Hello} />
       <WithMainLayout exact path="/" component={Home} />
       <WithMainLayout component={NotFound} />
